@@ -35,7 +35,7 @@ embeddings:
   # batch_size: 16 # the number of documents to send in a single request
   # batch_max_tokens: 8191 # the maximum number of tokens to send in a single request
   llm:
-    api_key: sk-proj-cIgTuAXoTX1XsuNfgfHfT3BlbkFJqgZvy6VU1MEUekWJ1ObX
+    api_key: 
     type: openai_embedding # or azure_openai_embedding
     model: text-embedding-3-small
     # api_base: https://<instance>.openai.azure.com
