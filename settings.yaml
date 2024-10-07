@@ -2,7 +2,7 @@
 encoding_model: cl100k_base
 skip_workflows: []
 llm:
-  api_key: sk-c564b4b7d2214e98b47b65f3a49c5cef
+  api_key: 
   type: openai_chat # or azure_openai_chat
   model: deepseek-chat
   model_supports_json: true # recommended if this is available for your model.
