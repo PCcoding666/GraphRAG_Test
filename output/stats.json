@@ -1,0 +1,101 @@
+{
+    "total_runtime": 411.11250853538513,
+    "num_documents": 1,
+    "input_load_time": 0,
+    "workflows": {
+        "create_base_text_units": {
+            "overall": 0.2056899070739746,
+            "0_orderby": 0.004480600357055664,
+            "1_zip": 0.0018215179443359375,
+            "2_aggregate_override": 0.005211353302001953,
+            "3_chunk": 0.15153121948242188,
+            "4_select": 0.004404783248901367,
+            "5_unroll": 0.007971763610839844,
+            "6_rename": 0.0026445388793945312,
+            "7_genid": 0.0041768550872802734,
+            "8_unzip": 0.006492137908935547,
+            "9_copy": 0.0027320384979248047,
+            "10_filter": 0.01129150390625
+        },
+        "create_base_extracted_entities": {
+            "overall": 161.465811252594,
+            "0_entity_extract": 161.43309569358826,
+            "1_merge_graphs": 0.02970147132873535
+        },
+        "create_summarized_entities": {
+            "overall": 24.600480794906616,
+            "0_summarize_descriptions": 24.59673285484314
+        },
+        "create_base_entity_graph": {
+            "overall": 0.06685590744018555,
+            "0_cluster_graph": 0.06013894081115723,
+            "1_select": 0.003606081008911133
+        },
+        "create_final_entities": {
+            "overall": 2.055579662322998,
+            "0_unpack_graph": 0.025229692459106445,
+            "1_rename": 0.0047681331634521484,
+            "2_select": 0.0063707828521728516,
+            "3_dedupe": 0.006862640380859375,
+            "4_rename": 0.006707906723022461,
+            "5_filter": 0.011827707290649414,
+            "6_text_split": 0.006545305252075195,
+            "7_drop": 0.005181312561035156,
+            "8_merge": 0.027037858963012695,
+            "9_text_embed": 1.934161901473999,
+            "10_drop": 0.004971504211425781,
+            "11_filter": 0.012195587158203125
+        },
+        "create_final_nodes": {
+            "overall": 0.352067232131958,
+            "0_layout_graph": 0.0874788761138916,
+            "1_unpack_graph": 0.03094339370727539,
+            "2_unpack_graph": 0.1396787166595459,
+            "3_filter": 0.01900792121887207,
+            "4_drop": 0.008245468139648438,
+            "5_select": 0.0071086883544921875,
+            "6_rename": 0.0069506168365478516,
+            "7_join": 0.017436742782592773,
+            "8_convert": 0.02267169952392578,
+            "9_rename": 0.007369041442871094
+        },
+        "create_final_communities": {
+            "overall": 0.0754537582397461,
+            "0_create_final_communities": 0.06800222396850586
+        },
+        "create_final_relationships": {
+            "overall": 0.05495429039001465,
+            "0_create_final_relationships_pre_embedding": 0.03580451011657715,
+            "1_create_final_relationships_post_embedding": 0.011856555938720703
+        },
+        "create_final_text_units": {
+            "overall": 0.043119192123413086,
+            "0_create_final_text_units_pre_embedding": 0.02237534523010254,
+            "1_select": 0.010422945022583008
+        },
+        "create_final_community_reports": {
+            "overall": 220.2445113658905,
+            "0_prepare_community_reports_nodes": 0.01695704460144043,
+            "1_prepare_community_reports_edges": 0.012204408645629883,
+            "2_restore_community_hierarchy": 0.011990547180175781,
+            "3_prepare_community_reports": 0.1277148723602295,
+            "4_create_community_reports": 220.05353093147278,
+            "5_window": 0.009796619415283203
+        },
+        "create_base_documents": {
+            "overall": 0.11372160911560059,
+            "0_unroll": 0.011362075805664062,
+            "1_select": 0.011079072952270508,
+            "2_rename": 0.009450435638427734,
+            "3_join": 0.01372528076171875,
+            "4_aggregate_override": 0.011074066162109375,
+            "5_join": 0.015277385711669922,
+            "6_rename": 0.010049581527709961,
+            "7_convert": 0.023053884506225586
+        },
+        "create_final_documents": {
+            "overall": 0.020983457565307617,
+            "0_rename": 0.010432243347167969
+        }
+    }
+}
